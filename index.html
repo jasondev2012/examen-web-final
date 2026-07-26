@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Panadería Miga Dorada: pan artesanal, bollería y pasteles recién horneados cada día." />
+    <title>Miga Dorada | Panadería artesanal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+    <header class="site-header" id="inicio">
+      <nav class="navbar container" aria-label="Navegación principal">
+        <a class="brand" href="#inicio" aria-label="Miga Dorada, inicio"><span aria-hidden="true">✦</span> Miga Dorada</a>
+        <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-menu"><span></span><span></span><span></span></button>
+        <div class="nav-actions" id="main-menu">
+          <ul class="nav-links">
+            <li><a href="#productos">Productos</a></li><li><a href="#historia">Nuestra historia</a></li><li><a href="#visitanos">Visítanos</a></li>
+          </ul>
+          <button class="theme-toggle" type="button" aria-label="Cambiar a modo oscuro" title="Cambiar tema"><span aria-hidden="true">☾</span></button>
+          <a class="button button-small" href="#contacto">Haz tu pedido</a>
+        </div>
+      </nav>
+      <section class="hero container" aria-labelledby="hero-title">
+        <div class="hero-content reveal">
+          <p class="eyebrow">Horneado cada mañana</p>
+          <h1 id="hero-title">El sabor de lo hecho <em>con tiempo.</em></h1>
+          <p class="hero-copy">Panes de masa madre, bollería dorada y dulces que convierten cualquier mañana en un pequeño ritual.</p>
+          <div class="hero-cta"><a class="button" href="#productos">Descubre el horno</a><a class="text-link" href="#visitanos">Encuéntranos <span aria-hidden="true">→</span></a></div>
+          <dl class="hero-stats"><div><dt>12 h</dt><dd>fermentación lenta</dd></div><div><dt>100%</dt><dd>ingredientes reales</dd></div><div><dt>7 días</dt><dd>horno encendido</dd></div></dl>
+        </div>
+        <div class="hero-visual reveal" aria-label="Pan artesanal recién horneado"><div class="bread bread-large"></div><div class="bread bread-small"></div><div class="flour" aria-hidden="true">✦</div><p>Desde 1998<br><span>hecho a mano</span></p></div>
+      </section>
+    </header>
+    <main id="contenido">
+      <section class="products section container" id="productos" aria-labelledby="products-title">
+        <div class="section-heading reveal"><div><p class="eyebrow">Lo que sale del horno</p><h2 id="products-title">Pequeños placeres,<br><em>grandes antojos.</em></h2></div><p>Seleccionamos buenos ingredientes y dejamos que el tiempo haga lo suyo. El resultado: recetas simples y memorables.</p></div>
+        <div class="product-grid">
+          <article class="product-card reveal"><div class="product-image sourdough" aria-hidden="true"><span>🥖</span></div><div><h3>Masa madre</h3><p>Corteza crujiente, miga húmeda y un fermento de 24 horas.</p><span class="price">S/ 14.00</span></div></article>
+          <article class="product-card reveal"><div class="product-image pastry" aria-hidden="true"><span>🥐</span></div><div><h3>Croissant clásico</h3><p>Mantequilla, capas delicadas y el dorado perfecto.</p><span class="price">S/ 8.00</span></div></article>
+          <article class="product-card reveal"><div class="product-image cake" aria-hidden="true"><span>🍰</span></div><div><h3>Tarta de temporada</h3><p>Fruta fresca y crema suave sobre masa quebrada.</p><span class="price">S/ 12.00</span></div></article>
+        </div>
+      </section>
+      <section class="story section" id="historia" aria-labelledby="story-title"><div class="story-wrap container"><div class="story-art reveal" aria-hidden="true"><span>☼</span><div class="story-bread">✦</div></div><div class="story-content reveal"><p class="eyebrow">Nuestra historia</p><h2 id="story-title">Un horno, una familia,<br><em>muchas mañanas.</em></h2><p>Hace más de dos décadas empezamos con una receta de pan y una idea clara: que el barrio oliera a pan recién hecho. Seguimos amasando con las mismas manos y la misma ilusión.</p><a class="text-link" href="#contacto">Conoce nuestra historia <span aria-hidden="true">→</span></a></div></div></section>
+      <section class="visit section container" id="visitanos" aria-labelledby="visit-title"><div class="visit-card reveal"><div><p class="eyebrow">Ven a saludarnos</p><h2 id="visit-title">Tu pausa favorita<br><em>está aquí cerca.</em></h2><address>Av. del Horno 123<br>Miraflores, Lima</address><p><strong>Lun — Dom</strong><br>7:00 a.m. — 8:00 p.m.</p></div><div class="visit-mark" aria-hidden="true"><span>☕</span><p>Pan caliente<br>todo el día</p></div></div></section>
+      <section class="contact section" id="contacto" aria-labelledby="contact-title"><div class="contact-wrap container reveal"><div><p class="eyebrow">Pedidos y consultas</p><h2 id="contact-title">¿Guardamos algo<br><em>para ti?</em></h2></div><form class="contact-form" novalidate><div class="form-row"><div><label for="name">Nombre</label><input id="name" name="name" type="text" autocomplete="name" required /></div><div><label for="phone">Teléfono</label><input id="phone" name="phone" type="tel" autocomplete="tel" required /></div></div><label for="message">¿Qué se te antoja?</label><textarea id="message" name="message" rows="3" required></textarea><button class="button" type="submit">Enviar consulta</button><p class="form-status" aria-live="polite"></p></form></div></section>
+    </main>
+    <footer class="site-footer"><div class="container"><a class="brand" href="#inicio"><span aria-hidden="true">✦</span> Miga Dorada</a><p>Panadería artesanal · Lima, Perú</p><p>© <span id="year"></span> Miga Dorada</p></div></footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
